@@ -1,0 +1,276 @@
+.logoImage {
+  font-size: 25px;
+  font-weight: 900;
+  margin-left: 30px;
+  cursor: pointer;
+  position: relative; /* Required for absolute positioning of ::after pseudo-element */
+  color: #333; /* Set the initial text color */
+}
+
+.logoImage::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #333; /* Use the desired underline color */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: bottom;
+  transition: transform 0.3s; /* Transition the underline scale over 0.3 seconds */
+}
+
+.logoImage:hover {
+  color: #35008588; /* Change the text color on hover */
+}
+
+.logoImage:hover::after {
+  transform: scaleX(1); /* Expand the underline on hover */
+}
+
+
+.dropdownButton{
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchInput svg {
+  width: 30px;
+  fill: rgb(56, 56, 56);
+  margin-right: 5px; /* Add some spacing between the icon and input */
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 110px;
+}
+
+nav ul li {
+  text-decoration: none;
+  padding: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Add this to your existing CSS */
+nav ul li {
+  position: relative; /* Required for absolute positioning of ::after pseudo-element */
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Start with 0 width */
+  height: 1px;
+  background-color: #000; /* Use the desired underline color */
+  transition: width 0.7s; /* Transition the width property over 2 seconds */
+}
+
+nav ul li:hover::after {
+  width: 100%; /* Expand the underline to full width on hover */
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  position: relative; /* Add position relative to enable absolute positioning of dropDownShoes */
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.searchInput input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  background-color: rgb(241, 241, 241);
+  height: 35px;
+}
+
+.searchInput:hover {
+  background-color: lightgray;
+}
+
+.searchInput input:focus {
+  box-shadow: 0 0 5px lightblue;
+}
+
+.dropDownShoes {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.searchItemShoe img{
+  width: 50px;
+}
+.searchItemShoe {
+ display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a.activeLink {
+  font-weight: bold;
+  text-decoration: none;
+
+.searchInput {
+  position: relative;
+}
+
+.dropDownShoes {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 100%;
+}
+
+.dropDownShoes .searchItemShoe {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropDownShoes .searchItemShoe img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.dropDownShoes {
+  display: block; 
+}
+.notificationBar {
+  display: flex;
+  align-items: center;
+}
+
+.notificationIcon {
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+}
+@media screen and (max-width: 391px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(246, 246, 246);
+    padding: 0 10px; 
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logoImage {
+    display: none;
+  }
+
+  .searchInput input {
+    padding: 0;
+  }
+
+  .dropdownButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px; /* Add some spacing to the right of the hamburger */
+  }
+
+  /* Style the hamburger icon (you can use any icon you prefer) */
+  .dropdownButton svg {
+    width: 30px;
+    fill: rgb(56, 56, 56);
+  }
+
+  /* Hide the dropdown shoes on small screens */
+  .dropDownShoes {
+    display: none;
+  }
+
+  /* Styles for the open navigation */
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 10;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+  }
+  
+  nav.open ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav.open ul li {
+    padding: 8px;
+  }
+  .button-24{
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,132 @@
+.ProductDetaislImage img{
+    width: 500px;
+}
+
+.ProductDetailsPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 86vh;
+}
+
+.details{
+    width: 500px;
+    height: 500px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 12px;
+}
+
+.details h1{
+    font-size: 40px;
+}
+
+.details p {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 3px;
+}
+
+.colors ul{
+    display: flex;
+    flex-direction: row;
+}
+.colors ul,
+.Sizes ul {
+  list-style-type: none; 
+  padding: 3px;
+  margin: 0;
+}
+
+.colors ul li,
+.Sizes ul li {
+  text-decoration: none;
+  padding: 9px;
+  width: 70px;
+  text-align: center;
+  background-color: rgb(227, 227, 227);
+  margin-right: 30px;
+  border: 1px solid rgb(219, 219, 219);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.Sizes ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-40{
+    padding: 10px;
+    margin-top: 30px;
+}
+.details span{
+    color: #494949;
+    font-size: 17px;
+}
+.button-40 button{
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.Sizes ul li{
+    text-align: center;
+    width: 50px;
+    background-color: #f4f4f4;
+    margin-right: 20px;
+}
+
+.colors ul li {
+    cursor: pointer;
+  }
+  
+  .colors ul li.selectedColor {
+    background-color: #000000;
+    color: #ffffff; /* Optionally change the text color for better visibility */
+  }
+  
+  .Sizes ul li {
+    cursor: pointer;
+  }
+  
+  .Sizes ul li.selectedSize {
+    background-color: #000000;
+    color: #ffffff; /* Optionally change the text color for better visibility */
+  }
+  
+  .button-40 button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 391px) {
+ .ProductDetailsPage{
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .ProductDetaislImage img {
+  width: 400px;
+ }
+
+ .details{
+  align-items: center;
+ }
+ .details span {
+  font-size: 12px;
+ }
+ .description{
+  text-align: center;
+ }
+}

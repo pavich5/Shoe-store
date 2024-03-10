@@ -1,0 +1,73 @@
+/* Footer.css */
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-info,
+.contact-info,
+.opening-hours {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.company-info p,
+.contact-info p,
+.opening-hours p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.contact-info h3,
+.opening-hours h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Add hover effect for links in the footer */
+
+.footer-content a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-info,
+  .contact-info,
+  .opening-hours {
+    margin: 10px 0;
+    text-align: center;
+  }
+}

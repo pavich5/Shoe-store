@@ -1,0 +1,240 @@
+.ProductList {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 20px;
+  min-height: 83vh;
+}
+
+.filters {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.AllShoes a{
+  text-decoration: none;
+  color: black;
+}
+.filterSection {
+  margin-bottom: 40px;
+}
+
+.filterGroup {
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.filterGroup h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filterGroup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterGroup ul li {
+  margin-bottom: 5px;
+}
+
+.colorSelect {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.sizeList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Shoe{
+  cursor: pointer;
+}
+
+.sizeList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+.dropDownShoes{
+  display: none;
+}
+
+.shoesList {
+  flex-grow: 1;
+}
+
+.sortBy {
+  margin-bottom: 20px;
+}
+
+.sortBy label {
+  margin-right: 10px;
+}
+
+.sortBy select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.AllShoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.sortBy{
+  display: flex;
+  align-items: center;
+}
+
+.sortBy svg {
+  margin-left: 50px;
+}
+.Shoe {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.shoeImage img {
+  width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.addToCart {
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Shoe p {
+  margin-bottom: 10px;
+  color: #636363;
+}
+
+.shoeInfo h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* Add the following styles to the existing CSS */
+
+.filterGroup select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.colorList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: rgb(186, 186, 186);
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.AllShoes a {
+  transition: transform 0.7s, box-shadow 0.7s;
+}
+
+.AllShoes a:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 391px) {
+  .ProductList{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shoesList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AllShoes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}

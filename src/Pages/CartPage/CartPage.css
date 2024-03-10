@@ -1,0 +1,149 @@
+/* CartPage.css */
+.CartPage {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 86vh;
+}
+
+.cartTable {
+  flex: 1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #171717;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.cartSidebar {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.cartSummary {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartSummary h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cartSummary p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.checkoutButton {
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.checkoutButton:hover {
+  background-color: #2c2c2c;
+}
+
+tr td img {
+  width: 120px;
+}
+
+.quantityInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin: auto;
+}
+
+.quantityInput button {
+  width: 25px;
+  height: 25px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.quantityInput input {
+  text-align: center;
+  width: 30px;
+  border: none;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.removeButton {
+  width: 80px;
+  background-color: rgb(255, 81, 81);
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 3px;
+}
+
+td img{
+  object-fit: contain;
+}
+
+.removeButton:hover {
+  background-color: rgb(214, 63, 63);
+}
+@media screen and (max-width: 391px) {
+  .CartPage{
+    flex-direction: column;
+  }
+
+  .cartSummary{
+    margin-top: 30px;
+    margin-right: 25px;
+  }
+  thead th:nth-child(2),
+  thead th:nth-child(3) {
+    display: none;
+  }
+  tbody{
+    display: flex;
+    flex-direction: column;
+  }
+}

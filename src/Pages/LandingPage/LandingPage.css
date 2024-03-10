@@ -1,0 +1,203 @@
+.LandingPageImage img{
+    width: 700px;
+    margin-top: 30px;
+}
+
+.LandingPage{
+    display: flex;
+    align-items: center;
+}
+
+.phoneLandingPage img {
+  display: none;
+}
+
+.Text {
+    padding: 70px;
+  }
+  
+  .Text h1 {
+    font-size: 70px;
+    font-family: 'nunito', 'roboto', 'proxima-nova', 'proxima nova', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+  }
+  
+  .Text h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: 'nunito', 'roboto', 'proxima-nova', 'proxima nova', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add text shadow */
+  }
+  
+  .Text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add text shadow */
+  }
+  
+
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 50px;
+  outline: 0;
+  padding: 15px 19px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 30px;
+  width: 150px;
+  
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+.landingPageShoes{
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.landingPageShoes a{
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+ 
+}
+
+.landingPageShoes a:hover{
+  transition: transform 0.7s, box-shadow 0.7s;
+  transform: translateY(-20px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+/* OnSaleShoes.css */
+
+.onSaleShoes {
+  padding: 20px;
+}
+
+.Informations {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Informations h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #f50057;
+}
+
+.landingPageShoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.Shoe {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.shoeImage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.shoeInfo {
+  padding: 10px 0;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.discountedPrice {
+  color: #f50057;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 391px) {
+  .LandingPage{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .landingPageShoes{
+    display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+      margin-left: 20px;
+  }
+  .Informations h1{
+    font-size: 25px;
+  }
+  .LandingPageImage img {
+    width: 300px;
+  }
+
+  .Text h1 {
+    font-size: 30px;
+  }
+
+   .Text h2 {
+    font-size: 20px;
+  }
+
+  .Text p {
+    font-size: 10px;
+  }
+  .Text{
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .phoneLandingPage img {
+    display: block;
+  }
+
+  .LandingPageImage img{
+    display: none;
+}
+
+}
